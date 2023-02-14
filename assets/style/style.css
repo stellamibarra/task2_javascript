@@ -1,0 +1,62 @@
+:root{
+    --bg-color-header-footer: rgba(108, 223, 31, 0.521);
+    --bg-color-card: blue;
+    --bg-color_nav: rgb(85, 58, 121);
+    --bg-color-table: rgb(197, 61, 61);
+    --bg-color-form:blue;
+    --bg-color-body:rgb(95, 95, 99);
+    --bg-color-categories:rgb(128, 99, 99);
+}
+.container{
+margin-top: 1rem;
+width: 75%;
+justify-content: center;
+align-items: center;
+height: auto;
+}
+header{
+}
+.event__card{
+    width: 43.75rem;
+    height: 15.625rem;
+    background-color: var(--bg-color-card);
+    
+}
+.card-img-top{
+    padding-top: 1rem;
+    
+}
+.card{
+    min-width: 330px;
+}
+.form-contact{
+    background-color: var(--bg-color-form);
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 23rem;
+
+}
+.form-contact__item{
+    margin-top: 1rem;
+}
+
+.table-responsive{
+    margin: 5rem auto;
+    background-color: var(--bg-color-table);
+}
+footer ,header ,.navbar{
+    background-color: var(--bg-color-header-footer);
+}
+footer{
+    margin-top: 2rem;
+}
+nav{
+    background-color: var(--bg-color_nav);
+}
+.categories{
+    background-color: var(--bg-color-categories);
+}
+
+body{
+    background-color: var(--bg-color-body);
+}
