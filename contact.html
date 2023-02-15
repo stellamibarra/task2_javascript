@@ -8,17 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/Logo_Amazing_Events.png" />
+    <title>Amazing</title>
 </head>
 
 <body>
     <header class="header-container d-flex justify-content-between">
 
         <a class="navbar-brand m-5" href="#">
-            <img src="./assets/images/Logo Amazing Events.png" alt="..." height="36">
+            <img src="./assets/images/Logo_Amazing_Events.png" alt="..." height="36">
         </a>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary m-5 ">
+        <nav class="navbar navbar-expand-lg  m-3 ">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +31,7 @@
                             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="./upcoming.html">Upcomig Events</a>
+                            <a class="nav-link" href="./upcoming.html">Upcoming Events</a>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="./past.html">Past Events</a>
@@ -48,60 +49,58 @@
     </header>
 
     <main class="main-container">
-<!-- navegacion hacia atras y adelante -->
-<nav class="d-flex justify-content-between m-4">
-    <a class="h1 text-primary text-decoration-none mx-5" href="./past.html">&laquo</a>
-    <h1>Contact</h1>
-    <a  class="h1 text-primary text-decoration-none mx-5" href="./stats.html">&raquo</a>
-</nav>
+        <nav class="d-flex justify-content-between m-4">
+            <a class="h1 text-primary text-decoration-none mx-5" href="./past.html">&laquo</a>
+            <h1>Contact</h1>
+            <a class="h1 text-primary text-decoration-none mx-5" href="./stats.html">&raquo</a>
+        </nav>
 
         <div class="container categories d-flex justify-content-between h-25">
 
             <div class="form-group">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheck">
-                <label class="form-check-label mx-2" for="flexCheckDefault">category1</label>
+                <label class="form-check-label mx-2" for="flexCheckDefault">Category1</label>
                 <input class="form-check-input" type="checkbox" value="" id="flexChe">
-                <label class="form-check-label mx-2" for="flexCheckDefault">category2</label>
+                <label class="form-check-label mx-2" for="flexCheckDefault">Category2</label>
                 <input class="form-check-input" type="checkbox" value="" id="flexC">
-                <label class="form-check-label mx-2" for="flexCheckDefault">category3</label>
+                <label class="form-check-label mx-2" for="flexCheckDefault">Category3</label>
                 <input class="form-check-input" type="checkbox" value="" id="fle">
-                <label class="form-check-label mx-2" for="flexCheckDefault">category4</label>
-    
+                <label class="form-check-label mx-2" for="flexCheckDefault">Category4</label>
+
             </div>
-    
-    
-            <div class="input-group w-25" >
+
+
+            <div class="input-group w-25">
                 <input type="text" class="form-control" placeholder="Recipient's username"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-warning" type="button" id="button-addon2">Button</button>
-           </div>
+                <button class="btn " type="button" id="button-addon2">Search</button>
+            </div>
         </div>
-<!-- contenido de la pagina -->
         <div class="container  d-flex justify-content-center align-content-center ">
             <form action="#" class="form-contact g-3 mt-3 ">
-    
+
                 <div class="form-contact__item col-12">
                     <label for="nameinput" class="form-label">Name</label>
                     <input type="input" class="form-control" id="nameinput">
-    
+
                 </div>
                 <div class="form-contact__item col-12">
                     <label for="emailinput" class="form-label">Email</label>
                     <input type="email" class="form-control" id="emailinput">
-    
+
                 </div>
                 <div class="form-contact__item col-12">
                     <label for="message-input" class="form-label">Message</label>
                     <input type="message" value="message-input" class="form-control" id="message-input">
-    
+
                 </div>
-    
+
                 <div class="form-contact__button mt-3 ">
                     <button type="submit" class="  btn btn-primary">submit</button>
-    
+
                 </div>
             </form>
-    
+
         </div>
     </main>
     <footer class="social-net d-flex justify-content-between">

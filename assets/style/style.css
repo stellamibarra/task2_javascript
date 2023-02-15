@@ -1,11 +1,11 @@
 :root{
-    --bg-color-header-footer: rgba(108, 223, 31, 0.521);
-    --bg-color-card: blue;
-    --bg-color_nav: rgb(85, 58, 121);
-    --bg-color-table: rgb(197, 61, 61);
-    --bg-color-form:blue;
-    --bg-color-body:rgb(95, 95, 99);
-    --bg-color-categories:rgb(128, 99, 99);
+    --bg-color-header-footer:rgb(185, 243, 228) ;
+    --bg-color-card:rgb(234, 143, 234);
+    --bg-color_nav:rgba(250, 201, 87, 0.322);
+    --bg-color-table: rgb(185, 243, 228);
+    --bg-color-form:rgb(234, 143, 234);
+    --bg-color-body:rgb(246, 230, 194);
+    --bg-color-categories:rgb(185, 243, 228);
 }
 .container{
 margin-top: 1rem;
@@ -14,8 +14,7 @@ justify-content: center;
 align-items: center;
 height: auto;
 }
-header{
-}
+
 .event__card{
     width: 43.75rem;
     height: 15.625rem;
