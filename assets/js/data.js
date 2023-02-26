@@ -171,30 +171,4 @@ let data = {
       }
     ]
   }
-  let card = document.getElementById("card");
-
-let template = []
-
-for (let index = 0; index < data.events.length; index++) {
-
-  template += `<div class="row p-4 justify-content-center">
-  <div class="card text-center" style="width: 18rem">
-    <img
-      src="${ data.events[index].image }"
-      class="card-img-top mt-2"
-      alt="..."
-    />
-    <div class="card-body">
-      <h5 class="">${ data.events[index].name }</h5>
-      <p class="card-text">${data.events[index].description}</p>
-      <div class="price d-flex justify-content-between">
-        <p class="card-text">$ ${data.events[index].price}</p>
-        <a href="#" class="btn btn-primary">Details</a>
-      </div>
-    </div>
-  </div>
-</div>
-`}
-
-
-card.innerHTML = template
+  
