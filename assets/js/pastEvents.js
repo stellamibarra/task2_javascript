@@ -171,41 +171,52 @@ let data = {
     }
   ]
 }
-
-
-let card = document.getElementById("card");
+let card = document.getElementById("card-past");
 
 
 const currentDate = data.currentDate;
 const arrayEvents = data.events;
+
+
 function getData() {
+
+  let pas = [];
+
+  for (let i = 0; i < arrayEvents.length; i++) {
+    let eventElement = arrayEvents[i];
+
+    if (eventElement.date < currentDate) {
+      pas.push(eventElement);
+    }
+  }
 
   let template
 
-  for (let index = 0; index < arrayEvents.length; index++) {
+  for (let index = 0; index < pas.length; index++) {
 
     template += `
-    <div class="row p-4 justify-content-center">
-      <div class="card text-center" style="width: 18rem">
-        <img
-          src="${ arrayEvents[index].image }"
-          class="card-img-top mt-2"
-          alt="..."
-        />
-          <div class="card-body">
-            <h5 class="">${ arrayEvents[index].name }</h5>
-            <p class="card-text">${ arrayEvents[index].description }</p>
-            
-            <div class="price d-flex justify-content-between">
-              <p class="card-text">${ arrayEvents[index].price }</p>
-              <a href="#" class="btn btn-primary">Details</a>
-            </div>
-          </div>
+
+  <div class="card event__card p-2 m-5 rounded ">
+  <div class="row no-gutters">
+    <div class="col-sm-5">
+      <img
+        class="card-img shadow-sm p-3 mb-5 bg-white rounded"
+        src=" ${pas[index].image} "
+        alt=""
+      />
+    </div>
+    <div class="col-sm-7">
+      <div class="card-body">
+        <h5 class="card-title">${pas[index].name} </h5>
+        <p class="card-text">
+        ${pas[index].description} 
+        </p>
       </div>
     </div>
-
+  </div>
+</div>
 `}
-  card.innerHTML = template;
+  card.innerHTML = template
 }
 
 getData();
